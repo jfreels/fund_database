@@ -28,10 +28,10 @@ shinyUI(pageWithSidebar(
       uiOutput("byFund_end_date")
     ),
     textInput(inputId="correlation_min",label="Minimum Correlation:",value=""),
-    helpText("*Created by Justin Freels"),
-    helpText("*email: jfreels@gmail.com"),
-    helpText("*twitter: https://twitter.com/jfreels4"),
-    helpText("*github: https://github.com/jfreels")
+    helpText(HTML("<br>*Created by: <a href = \"https://twitter.com/jfreels4\">@jfreels4</a>
+                  <br>*github <a href = \"https://github.com/jfreels/fund_database\">code</a>
+                  ")
+             )
   ),
   mainPanel(
     
@@ -57,6 +57,5 @@ shinyUI(pageWithSidebar(
       #         verbatimTextOutput("dataOriginal")
       #)
     )
-    
   )
 ))
